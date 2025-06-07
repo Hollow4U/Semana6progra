@@ -15,6 +15,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private List<Transform> spawnPointsEnemy1 = new List<Transform>();
     [SerializeField] private List<Transform> spawnPointsEnemy2 = new List<Transform>();
     [SerializeField] private List<Transform> spawnPointsEnemy3 = new List<Transform>();
+    [SerializeField] private List<Transform> spawnPointsEnemy4 = new List<Transform>();
 
     [SerializeField] private float spawnInterval = 5f;
 
@@ -48,6 +49,7 @@ public class Spawner : MonoBehaviour
             SpawnEnemiesOfType(1, enemiesToSpawn, spawnPointsEnemy1);
             SpawnEnemiesOfType(2, enemiesToSpawn, spawnPointsEnemy2);
             SpawnEnemiesOfType(3, enemiesToSpawn, spawnPointsEnemy3);
+            SpawnEnemiesOfType(4, enemiesToSpawn, spawnPointsEnemy4);
 
             level++;
             yield return new WaitForSeconds(spawnInterval);
