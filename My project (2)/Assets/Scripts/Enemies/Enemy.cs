@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour, IDamage
         strategy = strategyComponent as IEnemyStrategy;
         if (strategy == null)
         {
-            Debug.LogError("La estrategia no implementa IEnemyStrategy");
+
         }
     }
 
