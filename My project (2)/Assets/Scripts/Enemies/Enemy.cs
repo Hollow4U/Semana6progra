@@ -49,6 +49,7 @@ public class Enemy : MonoBehaviour, IDamage
 
     private void Die()
     {
+        GameStats.Instance.AddKill();
         EnemyManager.NotifyEnemyKilled();
         Destroy(gameObject);
     }

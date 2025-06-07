@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour, IDamage
     private void Die()
     {
         Debug.Log("¡Jugador ha muerto!");
-        OnPlayerDeath?.Invoke();
+        OnPlayerDeath?.Invoke(); 
         gameObject.SetActive(false);
     }
 }

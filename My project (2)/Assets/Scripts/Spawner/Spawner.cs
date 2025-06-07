@@ -61,6 +61,7 @@ public class Spawner : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
+            GameStats.Instance.IncreaseLevel();
             Transform spawnPoint = spawnPoints[i % spawnPoints.Count];
             GameObject enemy = Instantiate(enemyPrefabs[enemyIndex], spawnPoint.position, Quaternion.identity);
             OnEnemySpawned?.Invoke(enemy);
