@@ -15,10 +15,6 @@ public class PlayerHealth : MonoBehaviour, IDamage
         currentHealth = maxHealth;
     }
 
-   /* private void Update()
-    {
-        TakeDamage(0);
-    } */
 
     public void TakeDamage(float amount)
     {
