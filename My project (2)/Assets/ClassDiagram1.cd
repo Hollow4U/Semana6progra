@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BossStrategy">
+    <Position X="5.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAACABAAAAAAIQAAAgAEI=</HashCode>
+      <FileName>Assets\Scripts\Boss\BossStrategy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentStrategy" />
+      <Field Name="enemy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAIECAAgAAgAAAAAAEIAAAEAAABQAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies\Enemy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="strategy" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChaseStrategy">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies\Strategies\ChaseStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CircleStrategy">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies\Strategies\CircleStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RushStrategy">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies\Strategies\RushStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ZigZagStrategy">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies\Strategies\ZigZagStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EnemyManager" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAgAAAAAAAAAAAAAgAAABIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies\EnemyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bullet">
+    <Position X="2.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAwAAEAAAAAAAAAAAAAQAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Bullet\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerController">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEoAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerHealth">
+    <Position X="6.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAAAAAgAAAAAAAAIAAEAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerHealth.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PlayerShoot">
+    <Position X="8.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAIABAAAAARAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerShoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACgAAAAAAQAAAAKAAAAAAAASQBBAIIAABEA=</HashCode>
+      <FileName>Assets\Scripts\Spawner\Spawner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="enemyPrefabs" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
+    <Position X="17.5" Y="4.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="System.Collections.Generic.List&lt;T&gt;.Enumerator" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameOverUI">
+    <Position X="2.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAEAAIAAAAAAAEAAAIAAAAAQAAGAE=</HashCode>
+      <FileName>Assets\Scripts\UI\GameOverUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameStats">
+    <Position X="5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAAAAEAAAACAAAAAAAAAAQAAABQQAgAAAAIEA=</HashCode>
+      <FileName>Assets\Scripts\UI\GameStats.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="InGameHUD">
+    <Position X="7" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAIAAAAACAAAAAAAQAAAAAAAAE=</HashCode>
+      <FileName>Assets\Scripts\UI\InGameHUD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.234" />
+  </Class>
+  <Class Name="UIManager">
+    <Position X="11.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAQAABAAAAAAAACAAAAAQQQQAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\UI\UIManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameOverPanel" />
+      <Field Name="inGameHUD" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UIPanelBase">
+    <Position X="4.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\UIPanelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI">
+    <Position X="9" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAIAAAAACAAAAAIAQAAAAAACAE=</HashCode>
+      <FileName>Assets\Scripts\UI\UIStatsDisplay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IEnemyStrategy" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Enemies\IEnemyStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IDamage">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\IDamage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IStatsDisplay">
+    <Position X="9.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAACAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\IStatsDisplay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
